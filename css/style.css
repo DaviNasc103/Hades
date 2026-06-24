@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,100..900&display=swap');
+
+body{
+    
+        background-image: url(/img/background.png);
+        background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+   
+    }
+
+.titulo1{
+    text-align: center; 
+}
+.paragrafo{
+    background-color:  rgb(33, 199, 135);
+    margin: 0px;
+    font-style: imbue;
+    font-size: 35px;
+    width: 1000px;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+     font-family: "Imbue", serif;
+}
+
+.img{
+    border: 15px solid  rgb(33, 199, 135);
+    height: auto;
+}
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    gap: 20px; ; 
+     font-size: 30px;
+     text-align: center;
+}
+
+.conteiner2{
+display: flex ;           
+  flex-direction: row ;     
+  justify-content: center ; 
+  align-items: center ;     
+  gap: 20px;
+}
+
+.subtit{
+    text-align: center;
+    color: blue;
+    font-size: 30px;
+}
+
+
+.lista{
+    background-color: rgb(33, 199, 135);
+    font-size: 35px;
+    text-align: center;
+    gap: 10px;
+    width: 450px;
+    align-items: center;
+    margin: 0 auto;
+     font-family: "Imbue", serif;
+}
+
+.hr{
+    border: none; 
+  height: 2px;
+  background-color: black; 
+  width: 100%; 
+}
+
+.links{
+    font-size: 20px;
+    color: indigo;
+}
+
+
+
+

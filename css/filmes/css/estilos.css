@@ -1,0 +1,192 @@
+/* ==========================================
+   FONTES E CONFIGURAÇÕES GERAIS
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Definição de Fontes */
+}
+
+body {
+    background-color: #141414; /* Cor de fundo escura estilo streaming */
+    color: #ffffff; /* Cor do texto principal */
+}
+
+/* ==========================================
+   TAGS SEMÂNTICAS (Estilização Geral)
+   ========================================== */
+header {
+    background-color: #000000;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #e50914; /* Detalhe em vermelho */
+}
+
+header h1 {
+    color: #e50914; /* Cor vermelha para a logo */
+    font-size: 28px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px; /* Margem lateral nos itens do menu */
+}
+
+nav ul li a {
+    color: #aaaaaa;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #ffffff; /* Cor branca ao passar o mouse ou ativo */
+}
+
+main {
+    padding: 40px 50px; /* Margens internas para afastar o conteúdo das bordas */
+    min-height: 70px;
+}
+
+footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px; /* Margem superior para separar do conteúdo */
+    color: #666666;
+    font-size: 14px;
+}
+
+/* ==========================================
+   SELETORES DE ID (#)
+   ========================================== */
+#banner-principal {
+    background-color: #222222;
+    padding: 40px;
+    border-radius: 8px;
+    margin-bottom: 40px; /* Margem inferior */
+    text-align: center;
+}
+
+#banner-principal h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #e50914;
+}
+
+#area-contato {
+    max-width: 900px;
+    margin: 0 auto; /* Centraliza o bloco na tela */
+}
+
+#area-contato h2 {
+    margin-bottom: 20px;
+    color: #e50914;
+}
+
+/* ==========================================
+   SELETORES DE CLASSE (.) e DIVS
+   ========================================== */
+.container-filmes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Espaçamento entre os blocos de filmes */
+    margin-top: 20px;
+}
+
+.card-filme {
+    background-color: #1f1f1f;
+    width: 220px;
+    border-radius: 8px;
+    overflow: hidden;
+    padding-bottom: 15px;
+    transition: transform 0.3s;
+}
+
+.card-filme:hover {
+    transform: scale(1.05); /* Efeito visual ao passar o mouse */
+}
+
+.card-filme img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; /* Ajusta a imagem dentro do espaço */
+}
+
+.card-filme h3 {
+    padding: 10px 15px 5px 15px;
+    font-size: 18px;
+}
+
+.card-filme p {
+    padding: 0 15px;
+    font-size: 14px;
+    color: #bbbbbb;
+}
+
+.card-filme .categoria {
+    color: #e50914;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+/* Layout Flex da página de Contato */
+.contato-flex {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.formulario {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formulario input, .formulario textarea {
+    background-color: #333333;
+    border: 1px solid #444444;
+    padding: 10px;
+    color: #fff;
+    border-radius: 4px;
+    margin-bottom: 15px; /* Margem abaixo de cada campo */
+}
+
+.formulario button {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.formulario button:hover {
+    background-color: #b80710;
+}
+
+.imagem-contato {
+    flex: 1;
+}
+
+.imagem-contato img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
